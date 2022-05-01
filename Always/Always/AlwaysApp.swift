@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AlwaysApp: App {
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
