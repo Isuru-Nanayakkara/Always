@@ -15,6 +15,7 @@ struct AlwaysApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .frame(width: 0, height: 0)
         }
     }
 }

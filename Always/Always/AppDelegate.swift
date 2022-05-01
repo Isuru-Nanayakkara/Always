@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
+class AppDelegate: NSObject, NSApplicationDelegate {
     
     private var statusItem: NSStatusItem!
     private var popover: NSPopover!
@@ -23,6 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         popover.contentSize = CGSize(width: 300, height: 400)
         popover.behavior = .transient
         popover.contentViewController = NSHostingController(rootView: LoginView())
+        popover.contentViewController?.view.window?.makeKey()
     }
     
     @objc

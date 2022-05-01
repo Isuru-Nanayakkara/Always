@@ -25,7 +25,7 @@ struct LoginView: View {
             Button("Save") {
                 
             }
-        }
+        }.frame(width: 200, height: 150)
     }
 }
 
