@@ -11,6 +11,8 @@
 		D3999FE3281E60EF00E53366 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3999FE2281E60EF00E53366 /* ContentView.swift */; };
 		D3999FE5281E60F000E53366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3999FE4281E60F000E53366 /* Assets.xcassets */; };
 		D3999FE8281E60F000E53366 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3999FE7281E60F000E53366 /* Preview Assets.xcassets */; };
+		D3999FF3281E64D800E53366 /* Breakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3999FF2281E64D800E53366 /* Breakdown.swift */; };
+		D3999FF5281E650A00E53366 /* BreakdownGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3999FF4281E650A00E53366 /* BreakdownGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		D3999FE4281E60F000E53366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3999FE7281E60F000E53366 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3999FE9281E60F000E53366 /* Always.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Always.entitlements; sourceTree = "<group>"; };
+		D3999FEF281E619300E53366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D3999FF2281E64D800E53366 /* Breakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakdown.swift; sourceTree = "<group>"; };
+		D3999FF4281E650A00E53366 /* BreakdownGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				D3999FE0281E60EF00E53366 /* AlwaysApp.swift */,
+				D3999FF1281E64C200E53366 /* Views */,
+				D3999FF0281E64BD00E53366 /* Models */,
+				D3999FEF281E619300E53366 /* Info.plist */,
 				D3999FE2281E60EF00E53366 /* ContentView.swift */,
 				D3999FE4281E60F000E53366 /* Assets.xcassets */,
 				D3999FE9281E60F000E53366 /* Always.entitlements */,
@@ -67,6 +75,22 @@
 				D3999FE7281E60F000E53366 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3999FF0281E64BD00E53366 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3999FF4281E650A00E53366 /* BreakdownGroup.swift */,
+				D3999FF2281E64D800E53366 /* Breakdown.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3999FF1281E64C200E53366 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3999FE3281E60EF00E53366 /* ContentView.swift in Sources */,
+				D3999FF5281E650A00E53366 /* BreakdownGroup.swift in Sources */,
+				D3999FF3281E64D800E53366 /* Breakdown.swift in Sources */,
 				D3999FE1281E60EF00E53366 /* AlwaysApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,12 +302,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Always/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.bitinvent.Always;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -303,12 +330,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Always/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.bitinvent.Always;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
