@@ -20,6 +20,7 @@ struct LoginView: View {
             }
             .buttonStyle(.borderedProminent)
             .padding(.top, 10)
+            .disabled(username.isEmpty || password.isEmpty)
         }
         .frame(width: 240, height: 100)
         .padding(20)
