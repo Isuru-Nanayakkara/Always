@@ -10,28 +10,25 @@ import SwiftUI
 struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
-    
+
     var body: some View {
-        VStack {
-            HStack {
-                Text("Username")
-                TextField("", text: $username)
-            }
-            HStack {
-                Text("Password")
-                TextField("", text: $password)
-            }
-            
+        Form {
+            TextField("Username", text: $username)
+            SecureField("Password", text: $password)
             Button("Save") {
                 
             }
-        }.frame(width: 200, height: 150)
+            .buttonStyle(.borderedProminent)
+            .padding(.top, 10)
+        }
+        .frame(width: 240, height: 100)
+        .padding(20)
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
-            .previewLayout(.fixed(width: 300, height: 400))
+            .previewLayout(.fixed(width: 240, height: 100))
     }
 }
